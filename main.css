@@ -176,17 +176,38 @@ main img {
   background-color: rgba(252, 255, 46, 0.5);
   box-shadow: 0 10px 20px rgba(0,0,0,0.4);
 }
-/*mushroom-media-query*/
 
 @media (max-width: 800px) {
   .mushroom-grid {
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(3 auto);
+    grid-template-columns: repeat(2, 1fr);
   }
+
   .mushroom-card {
     width: 17em;
   }
 }
+
+@media (max-width: 600px) {
+  .mushroom-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mushroom-card {
+    width: 90%;
+    max-width: 400px;
+    aspect-ratio: auto;
+  }
+
+  .mushroom-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .mushroom-card:hover {
+    transform: translateY(-4px) scale(1.02);
+  }
+}
+
 
 /* =========================
    PAGE NAVIGATION BUTTONS
