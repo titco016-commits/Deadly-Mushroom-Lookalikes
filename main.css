@@ -190,6 +190,8 @@ main img {
 @media (max-width: 600px) {
   .mushroom-grid {
     grid-template-columns: 1fr;
+    max-width: 100%
+    padding: 10px
   }
 
   .mushroom-card {
